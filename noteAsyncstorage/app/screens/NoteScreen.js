@@ -157,11 +157,13 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 25,
     fontWeight: "bold",
+    color:'#8062D6'
   },
   container: {
     paddingHorizontal: 20,
     flex: 1,
     zIndex: 1,
+    backgroundColor:'colors.LIGHT'
   },
   emptyHeaderContainer: {
     justifyContent: "center",
@@ -180,5 +182,6 @@ const styles = StyleSheet.create({
     right: 15,
     bottom: 50,
     zIndex: 1,
+    backgroundColor:'#8062D6'
   },
 });

@@ -36,7 +36,7 @@ const Intro = ({ onFinis }) => {
           style={styles.textInput}
         />
         {name.trim().length >= 3 ? (
-          <RoundIconBtn antIconName="arrowright" onPress={handleSubmit} />
+          <RoundIconBtn style={{backgroundColor:'#8062D6'}} antIconName="arrowright" onPress={handleSubmit} />
         ) : null}
       </View>
     </>
@@ -51,11 +51,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor:'#EEEEEE'
   },
   textInput: {
     borderWidth: 2,
-    borderColor: colors.PRIMARY,
-    color: colors.PRIMARY,
+    borderColor:'#8062D6',
+    color:'#8062D6',
     width,
     height: 50,
     borderRadius: 10,

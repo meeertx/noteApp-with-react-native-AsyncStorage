@@ -31,7 +31,7 @@ export default SearchBar;
 
 const styles = StyleSheet.create({
   searchBar: {
-    borderWidth: 0.5,
+    borderWidth: 1,
     borderColor: colors.PRIMARY,
     height: 40,
     borderRadius: 40,

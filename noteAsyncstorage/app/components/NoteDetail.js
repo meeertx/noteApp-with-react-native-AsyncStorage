@@ -100,9 +100,10 @@ const openEditModal = () => {
         <RaundIconBtn
           onPress={displayDeleteAlert}
           antIconName="delete"
-          style={{ backgroundColor: colors.ERROR, marginBottom: 15 }}
+          style={{ backgroundColor: colors.ERROR, marginBottom: 15, }}
         />
         <RaundIconBtn
+          style={{backgroundColor:'#8062D6'}}
           onPress={openEditModal}
           antIconName="edit"
         />
@@ -116,7 +117,8 @@ export default NoteDetail;
 
 const styles = StyleSheet.create({
   container: {
-    //flex:1,
+    flex:1,
+    backgroundColor:colors.LIGHT,
     paddingHorizontal: 15,
   },
   title: {

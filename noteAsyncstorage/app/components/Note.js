@@ -7,7 +7,7 @@ const Note = ({ item, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Text style={styles.title} numberOfLines={2}>{title}</Text>
-      <Text numberOfLines={3}>{desc}</Text>
+      <Text numberOfLines={3} style={styles.desc}>{desc}</Text>
     </TouchableOpacity>
   );
 };
@@ -27,5 +27,10 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         fontSize:16,
         color:colors.LIGHT
+    },
+    desc:{
+      fontSize:16,
+      fontWeight:'400',
+      color:colors.DARK
     }
 });

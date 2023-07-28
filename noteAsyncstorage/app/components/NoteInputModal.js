@@ -74,8 +74,8 @@ useEffect(() => {
             onChangeText={(text) => hadnOnChangeText(text, "desc")}
           />
           <View style={styles.btnContainer}>
-            <RoundIconBtn size={15} antIconName="check" onPress={handleSubmit}/>
-          {title.trim() || desc.trim() ? ( <RoundIconBtn onPress={closeModal} size={15} antIconName="close" style={{marginLeft:15}} />) : null}
+            <RoundIconBtn size={15} antIconName="check" style={{backgroundColor:'#8062D6'}} onPress={handleSubmit}/>
+          {title.trim() || desc.trim() ? ( <RoundIconBtn onPress={closeModal} size={15} antIconName="close" style={{marginLeft:15,backgroundColor:'#8062D6'}} />) : null}
           </View>
         </View>
         <TouchableNativeFeedback onPress={handleModalClose}>
